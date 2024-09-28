@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Contenedor del Login -->
+    <div class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form onsubmit="return validateLogin()">
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label>Usuario</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label>Contraseña</label>
+            </div>
+            <button type="submit">Entrar</button>
+            <p id="login-error" class="error-message"></p>
+        </form>
+    </div>
+
+    <!-- Enlace al script JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
